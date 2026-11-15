@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="OWNHOUR Privacy Policy. Learn how OWNHOUR handles Screen Time data, app selections, reminders, and subscriptions.">
+  <title>Privacy Policy · OWNHOUR</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #657087;
+      --line: #e6e9f0;
+      --paper: #ffffff;
+      --wash: #f5f6fb;
+      --accent: #6557d9;
+      --accent-soft: #eeecff;
+      --night: #111827;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topbar {
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      width: min(100% - 40px, 960px);
+      margin: 0 auto;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; color: var(--night); text-decoration: none; font-weight: 800; letter-spacing: -.04em; font-size: 21px; }
+    .logo {
+      width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center;
+      color: white; background: linear-gradient(145deg, #7566ef, #3e328e);
+      box-shadow: 0 5px 14px rgba(83,69,190,.22);
+    }
+    .logo svg { width: 21px; height: 21px; }
+    .lang-switch { display: flex; gap: 5px; padding: 4px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .lang-switch button {
+      appearance: none; border: 0; border-radius: 8px; padding: 7px 11px; background: transparent;
+      color: var(--muted); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    }
+    .lang-switch button[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); }
+    main { width: min(100% - 40px, 820px); margin: 56px auto 72px; }
+    .hero {
+      background: var(--night); color: white; border-radius: 24px; padding: 38px 42px;
+      position: relative; overflow: hidden; box-shadow: 0 18px 45px rgba(17,24,39,.12);
+    }
+    .hero:after { content: ""; position: absolute; width: 260px; height: 260px; border-radius: 50%; right: -95px; top: -135px; background: radial-gradient(circle, rgba(125,111,255,.5), rgba(125,111,255,0)); }
+    .eyebrow { color: #bdb6ff; font-size: 12px; letter-spacing: .15em; font-weight: 800; text-transform: uppercase; margin: 0 0 12px; }
+    h1 { position: relative; z-index: 1; font-size: clamp(31px, 5vw, 43px); line-height: 1.12; letter-spacing: -.045em; margin: 0; }
+    .hero-copy { position: relative; z-index: 1; max-width: 570px; color: #d5d9e5; margin: 14px 0 0; font-size: 15px; }
+    .updated { position: relative; z-index: 1; display: inline-flex; margin-top: 23px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.07); padding: 6px 11px; border-radius: 999px; color: #e7e8f0; font-size: 12px; }
+    .policy-card { margin-top: 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 42px 46px; box-shadow: 0 8px 28px rgba(24,34,58,.035); }
+    .policy-section + .policy-section { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 25px; }
+    h2 { font-size: 19px; letter-spacing: -.02em; line-height: 1.35; margin: 0 0 10px; }
+    p { margin: 0 0 12px; color: #3d475c; font-size: 14.5px; }
+    ul { margin: 8px 0 12px; padding-inline-start: 22px; color: #3d475c; font-size: 14.5px; }
+    li { padding-inline-start: 4px; margin: 5px 0; }
+    a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
+    a:hover { text-decoration: underline; }
+    .callout { margin-top: 16px; background: #f5f4ff; border: 1px solid #e7e4ff; border-radius: 14px; padding: 15px 17px; }
+    .callout p { margin: 0; }
+    .contact-chip { display: inline-block; margin-top: 4px; border: 1px solid #e6e2ff; background: #f7f6ff; border-radius: 9px; padding: 7px 10px; font-size: 14px; }
+    footer { text-align: center; color: #7b8497; font-size: 12px; margin-top: 24px; }
+    [hidden] { display: none !important; }
+    [dir="rtl"] body { text-align: right; }
+    [dir="rtl"] .hero:after { right: auto; left: -95px; }
+    [dir="rtl"] .logo { direction: ltr; }
+    @media (max-width: 620px) {
+      .topbar-inner { width: min(100% - 28px, 960px); min-height: 68px; }
+      .brand { font-size: 18px; }
+      .logo { width: 33px; height: 33px; }
+      .lang-switch button { padding: 6px 8px; font-size: 12px; }
+      main { width: min(100% - 28px, 820px); margin: 28px auto 44px; }
+      .hero { border-radius: 19px; padding: 29px 25px; }
+      .policy-card { border-radius: 18px; padding: 27px 23px; }
+      p, ul { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="OWNHOUR home">
+        <span class="logo" aria-hidden="true">
+        
+            <path d="M12 3.2a8.8 8.8 0 1 0 8.8 8.8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M12 7.2v5.1l3.2 1.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>OWNHOUR</span>
+      </a>
+      <nav class="lang-switch" aria-label="Choose language">
+        <button type="button" data-language="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="tr" aria-pressed="false">TR</button>
+        <button type="button" data-language="ar" aria-pressed="false">عربي</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <p class="eyebrow" data-copy="eyebrow">OWNHOUR · LEGAL</p>
+      <h1 data-copy="title">Privacy Policy</h1>
+      <p class="hero-copy" data-copy="intro">Your time is personal. This policy explains how OWNHOUR handles information when you use the app.</p>
+      <span class="updated" data-copy="updated">Effective date: November 15, 2026</span>
+    </div>
+
+    <article class="policy-card" data-language-content="en">
+      <section class="policy-section">
+        <h2>1. About this policy</h2>
+        <p>This Privacy Policy describes how OWNHOUR ("we", "us", or "the app") handles information when you use the OWNHOUR iOS application. OWNHOUR is a screen-time and digital wellbeing app that lets you choose apps, set a shared daily usage budget, review usage insights, and optionally receive reminders.</p>
+        <p>OWNHOUR does not require you to create an account to use its core features.</p>
+      </section>
+      <section class="policy-section">
+        <h2>2. Screen Time access and app selections</h2>
+        <p>When you choose to authorize Screen Time access, OWNHOUR uses Apple's FamilyControls, DeviceActivity, and ManagedSettings frameworks to provide the features you request.</p>
+        <ul>
+          <li><strong>App selections:</strong> You select the apps you want to manage using Apple's system-provided selection interface. OWNHOUR uses the privacy-preserving app and category tokens provided by Apple.</li>
+          <li><strong>Usage information:</strong> The app uses Screen Time activity information for your selected apps to calculate the combined daily allowance, show relevant usage information and insights, and determine when the selected apps should be shielded.</li>
+          <li><strong>Shielding:</strong> When your shared daily allowance is exhausted, OWNHOUR can ask iOS to shield the selected apps until the next daily reset.</li>
+        </ul>
+        <p>OWNHOUR does not read the content inside other apps, such as messages, photos, passwords, or posts. It does not identify activity inside a particular screen or feature (for example, a specific feed or messaging section). The selected app is managed as a whole.</p>
+        <p>Screen Time information is used to provide OWNHOUR's screen-time features. Under the current app design, this information is processed on your device and in the app's shared on-device storage used by its app extensions; it is not uploaded to an OWNHOUR-operated server.</p>
+      </section>
+      <section class="policy-section">
+        <h2>3. Settings, budgets, and insights</h2>
+        <p>OWNHOUR may store app settings on your device, such as your selected daily budget, preferences, reminder settings, selected-app tokens, and information needed to display usage summaries. This information is used to operate the app, maintain your daily budget, and display your insights.</p>
+      </section>
+      <section class="policy-section">
+        <h2>4. Notifications and reminders</h2>
+        <p>Reminders are optional. If you enable them and grant notification permission, OWNHOUR may use iOS notification features and Screen Time activity events to remind you as you approach or reach your limit. You can change notification permission at any time in your device's Settings. Turning off notifications does not itself revoke Screen Time authorization.</p>
+      </section>
+      <section class="policy-section">
+        <h2>5. Subscriptions and payments</h2>
+        <p>OWNHOUR offers optional subscriptions through Apple's In-App Purchase and StoreKit services. Apple processes payments and manages billing. We do not receive or store your full payment card number. OWNHOUR uses the purchase or subscription status made available by Apple to determine whether Pro features are available.</p>
+        <p>Your purchases are also subject to Apple's terms and privacy practices. You can view or cancel a subscription through your Apple Account subscription settings. Deleting OWNHOUR does not automatically cancel an active subscription.</p>
+      </section>
+      <section class="policy-section">
+        <h2>6. Sharing and disclosure</h2>
+        <p>We do not sell your personal information. OWNHOUR does not share your Screen Time activity or selected-app information with advertisers. Apple processes information as needed to provide iOS Screen Time permissions, App Store purchases, and subscription services under Apple's own terms and privacy policy.</p>
+        <p>We may disclose information if required by applicable law or a valid legal process. The current app design does not require an OWNHOUR account or a developer-operated service to store your Screen Time history.</p>
+      </section>
+      <section class="policy-section">
+        <h2>7. Data retention and deletion</h2>
+        <p>Information used by OWNHOUR's core features is stored locally on your device for as long as it is needed to operate the app and show your settings or insights. You can stop future Screen Time access by revoking OWNHOUR's permission in iOS Settings. You can remove OWNHOUR's locally stored app data by deleting the app from your device.</p>
+        <p>Revoking Screen Time access may stop usage monitoring and shielding features from working. Apple may retain purchase, billing, or transaction records under its own policies and legal obligations. Deleting the app does not delete records held by Apple or cancel subscriptions.</p>
+      </section>
+      <section class="policy-section">
+        <h2>8. Security</h2>
+        <p>We rely on iOS's platform protections and on-device storage for the app's local information. No method of electronic storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
+      </section>
+      <section class="policy-section">
+        <h2>9. Children's privacy</h2>
+        <p>OWNHOUR is not designed to collect personal information from children, and it does not require a personal account. Parents or guardians should supervise a child's use of device-level Screen Time features and permissions.</p>
+      </section>
+      <section class="policy-section">
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when the app's features, data practices, or legal requirements change. The updated policy will be posted on this page with a revised effective date.</p>
+      </section>
+      <section class="policy-section">
+        <h2>11. Contact</h2>
+        <p>For privacy questions or requests, contact the OWNHOUR developer:</p>
+        <a class="contact-chip" href="mailto:REPLACE-WITH-YOUR-SUPPORT-EMAIL">REPLACE-WITH-YOUR-SUPPORT-EMAIL</a>
+      </section>
+      <div class="callout"><p><strong>Important:</strong> This policy reflects the app functionality and data handling described for the current OWNHOUR build. If a future version adds analytics, advertising, accounts, cloud sync, or other third-party SDKs, this policy and the App Privacy answers in App Store Connect must be updated.</p></div>
+    </article>
+
+    <article class="policy-card" data-language-content="tr" hidden>
+      <section class="policy-section">
+        <h2>1. Bu politika hakkında</h2>
+        <p>Bu Gizlilik Politikası, OWNHOUR iOS uygulamasını kullandığınızda bilgilerin nasıl işlendiğini açıklar. OWNHOUR; uygulama seçmenize, ortak bir günlük kullanım süresi belirlemenize, kullanım özetlerini incelemenize ve isteğe bağlı hatırlatmalar almanıza yardımcı olan bir ekran süresi ve dijital denge uygulamasıdır.</p>
+        <p>OWNHOUR'ın temel özelliklerini kullanmak için hesap oluşturmanız gerekmez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>2. Ekran Süresi erişimi ve uygulama seçimleri</h2>
+        <p>Ekran Süresi erişimine izin verdiğinizde OWNHOUR, talep ettiğiniz özellikleri sunmak için Apple'ın FamilyControls, DeviceActivity ve ManagedSettings çerçevelerini kullanır.</p>
+        <ul>
+          <li><strong>Uygulama seçimleri:</strong> Yönetmek istediğiniz uygulamaları Apple'ın sistem arayüzünden seçersiniz. OWNHOUR, Apple tarafından sağlanan gizliliği koruyan uygulama ve kategori belirteçlerini kullanır.</li>
+          <li><strong>Kullanım bilgileri:</strong> Seçtiğiniz uygulamalara ilişkin Ekran Süresi etkinlik bilgileri; ortak günlük süreyi hesaplamak, ilgili kullanım bilgilerini ve özetlerini göstermek ve uygulamaların ne zaman engelleneceğini belirlemek için kullanılır.</li>
+          <li><strong>Engelleme:</strong> Ortak günlük süreniz dolduğunda OWNHOUR, bir sonraki günlük sıfırlamaya kadar iOS'un seçili uygulamaları engellemesini sağlayabilir.</li>
+        </ul>
+        <p>OWNHOUR; mesajlar, fotoğraflar, parolalar veya gönderiler gibi diğer uygulamaların içeriğini okumaz. Belirli bir uygulama içindeki ekranı veya özelliği (örneğin belirli bir akışı ya da mesajlaşma bölümünü) ayrı ayrı tespit etmez. Seçilen uygulama bir bütün olarak yönetilir.</p>
+        <p>Ekran Süresi bilgileri OWNHOUR'ın ekran süresi özelliklerini sunmak için kullanılır. Mevcut uygulama tasarımında bu bilgiler cihazınızda ve uygulama uzantılarının kullandığı cihaz içi ortak depolama alanında işlenir; OWNHOUR tarafından işletilen bir sunucuya yüklenmez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>3. Ayarlar, süre bütçeleri ve özetler</h2>
+        <p>OWNHOUR; seçtiğiniz günlük süre bütçesi, tercihleriniz, hatırlatma ayarlarınız, seçili uygulama belirteçleri ve kullanım özetlerini göstermek için gereken bilgiler gibi uygulama ayarlarını cihazınızda saklayabilir. Bu bilgiler uygulamayı çalıştırmak, günlük sürenizi korumak ve kullanım özetlerinizi göstermek için kullanılır.</p>
+      </section>
+      <section class="policy-section">
+        <h2>4. Bildirimler ve hatırlatmalar</h2>
+        <p>Hatırlatmalar isteğe bağlıdır. Hatırlatmaları etkinleştirir ve bildirim izni verirseniz OWNHOUR, limite yaklaşırken veya limit dolduğunda sizi bilgilendirmek için iOS bildirim özelliklerini ve Ekran Süresi etkinlik olaylarını kullanabilir. Bildirim iznini cihazınızın Ayarlar bölümünden istediğiniz zaman değiştirebilirsiniz. Bildirimleri kapatmak, Ekran Süresi iznini kendiliğinden kaldırmaz.</p>
+      </section>
+      <section class="policy-section">
+        <h2>5. Abonelikler ve ödemeler</h2>
+        <p>OWNHOUR, Apple'ın Uygulama İçi Satın Alma ve StoreKit hizmetleri üzerinden isteğe bağlı abonelikler sunar. Ödemeleri Apple işler ve faturalandırmayı yönetir. Tam ödeme kartı numaranızı almaz veya saklamayız. OWNHOUR, Pro özelliklerinin kullanılabilir olup olmadığını belirlemek için Apple'ın sağladığı satın alma veya abonelik durumunu kullanır.</p>
+        <p>Satın alımlarınız Apple'ın kendi koşullarına ve gizlilik uygulamalarına da tabidir. Aboneliğinizi Apple Hesabınızın abonelik ayarlarından görüntüleyebilir veya iptal edebilirsiniz. OWNHOUR uygulamasını silmek etkin bir aboneliği otomatik olarak iptal etmez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>6. Bilgi paylaşımı</h2>
+        <p>Kişisel bilgilerinizi satmayız. OWNHOUR, Ekran Süresi etkinliklerinizi veya seçtiğiniz uygulama bilgilerini reklamverenlerle paylaşmaz. Apple; iOS Ekran Süresi izinlerini, App Store satın alımlarını ve abonelik hizmetlerini sağlamak için gerekli bilgileri kendi koşulları ve gizlilik politikası kapsamında işler.</p>
+        <p>Yürürlükteki yasa veya geçerli bir hukuki süreç gerektirirse bilgi açıklayabiliriz. Mevcut uygulama tasarımı, Ekran Süresi geçmişini saklamak için OWNHOUR hesabı veya geliştirici tarafından işletilen bir hizmet gerektirmez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>7. Saklama ve silme</h2>
+        <p>OWNHOUR'ın temel özellikleri için kullanılan bilgiler, uygulamanın çalışması ve ayarlarınızı veya özetlerinizi göstermesi için gerekli olduğu sürece cihazınızda yerel olarak saklanır. iOS Ayarları'ndan OWNHOUR'ın iznini kaldırarak gelecekteki Ekran Süresi erişimini durdurabilirsiniz. Uygulamayı cihazınızdan silerek OWNHOUR'ın yerel uygulama verilerini kaldırabilirsiniz.</p>
+        <p>Ekran Süresi erişimini kaldırmak, kullanım izleme ve engelleme özelliklerinin çalışmasını durdurabilir. Apple, satın alma, faturalandırma veya işlem kayıtlarını kendi politikaları ve yasal yükümlülükleri uyarınca saklayabilir. Uygulamayı silmek Apple'ın tuttuğu kayıtları silmez veya aboneliğinizi iptal etmez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>8. Güvenlik</h2>
+        <p>Uygulamanın yerel bilgileri için iOS platform korumalarına ve cihaz içi depolamaya dayanırız. Elektronik depolama veya aktarım yöntemlerinin hiçbiri tamamen güvenli olmadığından mutlak güvenlik garanti edilemez.</p>
+      </section>
+      <section class="policy-section">
+        <h2>9. Çocukların gizliliği</h2>
+        <p>OWNHOUR çocuklardan kişisel bilgi toplamak üzere tasarlanmamıştır ve kişisel hesap gerektirmez. Ebeveynler veya vasiler, çocuğun cihaz düzeyindeki Ekran Süresi özelliklerini ve izinlerini kullanımını denetlemelidir.</p>
+      </section>
+      <section class="policy-section">
+        <h2>10. Politikadaki değişiklikler</h2>
+        <p>Uygulama özellikleri, veri işleme uygulamaları veya yasal gereklilikler değiştiğinde bu Gizlilik Politikası'nı güncelleyebiliriz. Güncellenmiş politika, yeni yürürlük tarihiyle bu sayfada yayımlanacaktır.</p>
+      </section>
+      <section class="policy-section">
+        <h2>11. İletişim</h2>
+        <p>Gizlilikle ilgili sorularınız veya talepleriniz için OWNHOUR geliştiricisiyle iletişime geçin:</p>
+        <a class="contact-chip" href="mailto:REPLACE-WITH-YOUR-SUPPORT-EMAIL">REPLACE-WITH-YOUR-SUPPORT-EMAIL</a>
+      </section>
+      <div class="callout"><p><strong>Önemli:</strong> Bu politika, mevcut OWNHOUR sürümü için açıklanan özellikleri ve veri işleme yöntemlerini temel alır. Gelecekteki bir sürüme analiz, reklam, hesap, bulut eşitleme veya başka üçüncü taraf SDK'ları eklenirse bu politika ve App Store Connect'teki App Privacy yanıtları güncellenmelidir.</p></div>
+    </article>
+
+    <article class="policy-card" data-language-content="ar" dir="rtl" hidden>
+      <section class="policy-section">
+        <h2>1. حول سياسة الخصوصية</h2>
+        <p>توضح سياسة الخصوصية هذه كيفية تعامل تطبيق OWNHOUR مع المعلومات عند استخدامك لتطبيق iOS. يساعدك OWNHOUR على اختيار التطبيقات، وتحديد ميزانية يومية مشتركة لاستخدامها، ومراجعة ملخصات الاستخدام، وتلقي تذكيرات اختيارية.</p>
+        <p>لا تحتاج إلى إنشاء حساب لاستخدام الميزات الأساسية في OWNHOUR.</p>
+      </section>
+      <section class="policy-section">
+        <h2>2. الوصول إلى «مدة استخدام الجهاز» واختيار التطبيقات</h2>
+        <p>عندما توافق على منح التطبيق إذن «مدة استخدام الجهاز»، يستخدم OWNHOUR أطر Apple التالية لتقديم الميزات التي تطلبها: FamilyControls وDeviceActivity وManagedSettings.</p>
+        <ul>
+          <li><strong>اختيار التطبيقات:</strong> تختار بنفسك التطبيقات التي تريد إدارتها من خلال واجهة الاختيار التي يوفرها النظام. يستخدم OWNHOUR الرموز الخاصة بالتطبيقات والفئات التي توفرها Apple بطريقة تراعي الخصوصية.</li>
+          <li><strong>معلومات الاستخدام:</strong> تُستخدم معلومات النشاط الخاصة بالتطبيقات التي اخترتها لحساب الميزانية اليومية المشتركة، وعرض معلومات وملخصات الاستخدام، وتحديد وقت حجب التطبيقات المختارة.</li>
+          <li><strong>الحجب:</strong> عند انتهاء الميزانية اليومية المشتركة، يمكن لـ OWNHOUR أن يطلب من iOS حجب التطبيقات المختارة حتى إعادة ضبط الميزانية في اليوم التالي.</li>
+        </ul>
+        <p>لا يقرأ OWNHOUR محتوى التطبيقات الأخرى، مثل الرسائل أو الصور أو كلمات المرور أو المنشورات. كما لا يميّز النشاط داخل شاشة أو ميزة محددة في التطبيق الآخر، مثل قسم معين من الخلاصة أو الرسائل. تتم إدارة التطبيق المختار بالكامل.</p>
+        <p>تُستخدم معلومات «مدة استخدام الجهاز» لتشغيل ميزات إدارة الوقت في OWNHOUR. ووفق تصميم التطبيق الحالي، تتم معالجة هذه المعلومات على جهازك وضمن مساحة التخزين المحلية المشتركة التي تستخدمها امتدادات التطبيق، ولا يتم رفعها إلى خادم تديره OWNHOUR.</p>
+      </section>
+      <section class="policy-section">
+        <h2>3. الإعدادات والميزانية وملخصات الاستخدام</h2>
+        <p>قد يخزّن OWNHOUR على جهازك إعدادات التطبيق، مثل الميزانية اليومية التي اخترتها، وتفضيلاتك، وإعدادات التذكير، والرموز الخاصة بالتطبيقات المختارة، والمعلومات اللازمة لعرض ملخصات الاستخدام. تُستخدم هذه المعلومات لتشغيل التطبيق والحفاظ على ميزانيتك اليومية وعرض الإحصاءات.</p>
+      </section>
+      <section class="policy-section">
+        <h2>4. الإشعارات والتذكيرات</h2>
+        <p>التذكيرات اختيارية. إذا فعّلتها ومنحت إذن الإشعارات، فقد يستخدم OWNHOUR ميزات إشعارات iOS وأحداث نشاط «مدة استخدام الجهاز» لتذكيرك عند اقترابك من الحد أو وصولك إليه. يمكنك تغيير إذن الإشعارات في إعدادات الجهاز في أي وقت. إيقاف الإشعارات لا يلغي بحد ذاته إذن «مدة استخدام الجهاز».</p>
+      </section>
+      <section class="policy-section">
+        <h2>5. الاشتراكات والمدفوعات</h2>
+        <p>يوفر OWNHOUR اشتراكات اختيارية من خلال خدمات Apple للشراء داخل التطبيق وStoreKit. تتولى Apple معالجة المدفوعات وإدارة الفوترة. لا نتلقى رقم بطاقتك المصرفية الكامل ولا نخزّنه. يستخدم OWNHOUR حالة الشراء أو الاشتراك التي توفرها Apple لتحديد إمكانية الوصول إلى ميزات Pro.</p>
+        <p>تخضع مشترياتك أيضاً لشروط Apple وممارسات الخصوصية لديها. يمكنك الاطلاع على اشتراكك أو إلغاؤه من إعدادات الاشتراكات في حساب Apple الخاص بك. حذف تطبيق OWNHOUR لا يلغي الاشتراك النشط تلقائياً.</p>
+      </section>
+      <section class="policy-section">
+        <h2>6. مشاركة المعلومات والإفصاح عنها</h2>
+        <p>لا نبيع معلوماتك الشخصية. ولا يشارك OWNHOUR معلومات نشاط «مدة استخدام الجهاز» أو التطبيقات التي اخترتها مع المعلنين. تعالج Apple المعلومات اللازمة لتوفير أذونات «مدة استخدام الجهاز» ومشتريات App Store والاشتراكات وفق شروطها وسياسة الخصوصية الخاصة بها.</p>
+        <p>قد نفصح عن المعلومات إذا كان ذلك مطلوباً بموجب القانون المعمول به أو إجراء قانوني صحيح. ولا يتطلب تصميم التطبيق الحالي إنشاء حساب OWNHOUR أو استخدام خدمة يديرها المطوّر لتخزين سجل وقت الاستخدام.</p>
+      </section>
+      <section class="policy-section">
+        <h2>7. الاحتفاظ بالبيانات وحذفها</h2>
+        <p>تُخزّن المعلومات اللازمة للميزات الأساسية في OWNHOUR محلياً على جهازك ما دامت ضرورية لتشغيل التطبيق وعرض إعداداتك أو ملخصاتك. يمكنك إيقاف الوصول المستقبلي إلى «مدة استخدام الجهاز» من خلال إلغاء إذن OWNHOUR في إعدادات iOS. ويمكنك إزالة بيانات التطبيق المخزنة محلياً عن طريق حذف التطبيق من جهازك.</p>
+        <p>قد يؤدي إلغاء إذن «مدة استخدام الجهاز» إلى توقف ميزات مراقبة الاستخدام والحجب. وقد تحتفظ Apple بسجلات الشراء والفوترة والمعاملات وفق سياساتها والتزاماتها القانونية. حذف التطبيق لا يحذف السجلات التي تحتفظ بها Apple ولا يلغي الاشتراكات.</p>
+      </section>
+      <section class="policy-section">
+        <h2>8. الأمان</h2>
+        <p>نعتمد على وسائل الحماية التي يوفرها نظام iOS وعلى التخزين المحلي لمعلومات التطبيق. لا توجد وسيلة تخزين أو نقل إلكترونية آمنة بصورة مطلقة، لذلك لا يمكن ضمان الأمان الكامل.</p>
+      </section>
+      <section class="policy-section">
+        <h2>9. خصوصية الأطفال</h2>
+        <p>لم يُصمّم OWNHOUR لجمع معلومات شخصية من الأطفال، ولا يتطلب إنشاء حساب شخصي. ينبغي للوالدين أو الأوصياء الإشراف على استخدام الطفل لميزات «مدة استخدام الجهاز» والأذونات على مستوى الجهاز.</p>
+      </section>
+      <section class="policy-section">
+        <h2>10. التغييرات على هذه السياسة</h2>
+        <p>قد نحدّث سياسة الخصوصية عندما تتغير ميزات التطبيق أو ممارسات التعامل مع البيانات أو المتطلبات القانونية. سننشر النسخة المحدّثة في هذه الصفحة مع تعديل تاريخ السريان.</p>
+      </section>
+      <section class="policy-section">
+        <h2>11. التواصل</h2>
+        <p>للاستفسارات أو الطلبات المتعلقة بالخصوصية، تواصل مع مطوّر OWNHOUR:</p>
+        <a class="contact-chip" href="mailto:REPLACE-WITH-YOUR-SUPPORT-EMAIL" dir="ltr">REPLACE-WITH-YOUR-SUPPORT-EMAIL</a>
+      </section>
+      <div class="callout"><p><strong>ملاحظة مهمة:</strong> تعكس هذه السياسة الميزات وطريقة التعامل مع البيانات الموضحة للإصدار الحالي من OWNHOUR. إذا أضاف إصدار مستقبلي أدوات تحليل أو إعلانات أو حسابات أو مزامنة سحابية أو أدوات خارجية أخرى، فيجب تحديث هذه السياسة وإجابات خصوصية التطبيق في App Store Connect.</p></div>
+    </article>
+
+    <footer data-copy="footer">OWNHOUR · Make time yours.</footer>
+  </main>
+
+  <script>
+    const copy = {
+      en: {
+        eyebrow: 'OWNHOUR · LEGAL', title: 'Privacy Policy',
+        intro: 'Your time is personal. This policy explains how OWNHOUR handles information when you use the app.',
+        updated: 'Effective date: November 15, 2026', footer: 'OWNHOUR · Make time yours.'
+      },
+      tr: {
+        eyebrow: 'OWNHOUR · YASAL', title: 'Gizlilik Politikası',
+        intro: 'Zamanınız size özeldir. Bu politika, uygulamayı kullandığınızda OWNHOUR’ın bilgileri nasıl işlediğini açıklar.',
+        updated: 'Yürürlük tarihi: 15 Kasım 2026', footer: 'OWNHOUR · Zamanını kendin yönet.'
+      },
+      ar: {
+        eyebrow: 'OWNHOUR · معلومات قانونية', title: 'سياسة الخصوصية',
+        intro: 'وقتك ملكك. توضح هذه السياسة كيفية تعامل OWNHOUR مع المعلومات عند استخدامك للتطبيق.',
+        updated: 'تاريخ السريان: 15 نوفمبر 2026', footer: 'OWNHOUR · اجعل وقتك ملكك.'
+      }
+    };
+    const languageButtons = document.querySelectorAll('[data-language]');
+    const languageArticles = document.querySelectorAll('[data-language-content]');
+    function setLanguage(language) {
+      if (!copy[language]) return;
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+      languageArticles.forEach(article => { article.hidden = article.dataset.languageContent !== language; });
+      languageButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
+      document.querySelectorAll('[data-copy]').forEach(element => {
+        const key = element.dataset.copy;
+        if (copy[language][key]) element.textContent = copy[language][key];
+      });
+    }
+    languageButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+    setLanguage('en');
+  </script>
+</body>
+</html>
